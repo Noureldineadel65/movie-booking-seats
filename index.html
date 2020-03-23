@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Theatre Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://kit.fontawesome.com/8027935937.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="select-box.js" defer></script>
+    <script src="script.js" defer></script>
+
+</head>
+
+<body class="center">
+    <h1>Movie Theatre Booking <i class="fas fa-ticket-alt"></i></h1>
+    <div class="container">
+        <div class="movie-container">
+            <label>Pick a movie:</label>
+            <form>
+                <input class="chosen-value" type="text" value="" placeholder="Type to filter">
+                <ul class="value-list">
+                    <li data-value="11" class="movie">Joker</li>
+                    <li data-value="9" class="movie">Toy Story</li>
+                    <li data-value="8" class="movie">The Lion King</li>
+                    <li data-value="11" class="movie">John Wick</li>
+                </ul>
+            </form>
+        </div>
+        <div class="showcase">
+            <ul>
+                <li>
+                    <div class="seat"></div>
+                    <small>N/A</small>
+                </li>
+                <li>
+                    <div class="seat selected"></div>
+                    <small>Selected</small>
+                </li>
+                <li>
+                    <div class="seat occupied"></div>
+                    <small>Occupied</small>
+                </li>
+            </ul>
+        </div>
+        <div class="screen"></div>
+        <div class="seats">
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+        </div>
+        <p>You have selected <span id="movie-number">0</span> seats with the price of: <span id="total">$0</span></p>
+        <button class="animated bounceIn checkout" id="checkout">Checkout <i class="fas fa-dollar-sign"></i></but>
+    </div>
+</body>
+
+</html>
